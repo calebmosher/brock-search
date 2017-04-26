@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Brock Search</title>
+
+<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<form class="title">
+			<span>Find all components where</span>
+			<br />
+			<select class="field">
+				<option disabled selected>Choose Field</option>
+			</select>
+			<span>contains</span>
+			<input class="query" type="text" />
+			<input class="search" type="submit" value="search" onclick="find()" />
+		</form>
+
+		<div class="result results-headers"></div>
+		<div class="results"></div>
+
+		<div class="clear"></div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
